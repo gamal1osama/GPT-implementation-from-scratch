@@ -121,16 +121,6 @@ Input tokens (B, T)
     ├─ Final LayerNorm
     └─ Linear head  (n_embd → vocab_size)
 ```
-
----
-
-## References
-
-- Vaswani et al., *Attention Is All You Need* (2017)
-- Radford et al., *Language Models are Unsupervised Multitask Learners* – GPT-2 (2019)
-- Karpathy, [*Let's build GPT: from scratch, in code, spelled out*](https://www.youtube.com/watch?v=kCc8FmEb1nY) (2023)
-- Karpathy, [*Let's build GPT: from scratch, in code, spelled out*](https://www.youtube.com/watch?v=kCc8FmEb1nY) (2023)
-
 ---
 
 ## Notebooks (Git LFS)
@@ -150,3 +140,13 @@ git lfs track "*.ipynb"
 git add .gitattributes
 git commit -m "Track notebooks with Git LFS"
 ```
+
+---
+
+## References
+
+- Vaswani et al., *Attention Is All You Need* (2017)
+- Radford et al., *Language Models are Unsupervised Multitask Learners* – GPT-2 (2019)
+- Karpathy, [*Let's build GPT: from scratch, in code, spelled out*](https://www.youtube.com/watch?v=kCc8FmEb1nY) (2023)
+
+

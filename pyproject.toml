@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "gpt-from-scratch"
+version = "0.1.0"
+description = "A character-level GPT language model built from scratch with PyTorch."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "pyyaml>=6.0",
+    "numpy>=1.24.0",
+]
+
+[project.scripts]
+gpt-train    = "train:main"
+gpt-generate = "generate:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

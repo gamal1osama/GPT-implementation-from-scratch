@@ -129,3 +129,24 @@ Input tokens (B, T)
 - Vaswani et al., *Attention Is All You Need* (2017)
 - Radford et al., *Language Models are Unsupervised Multitask Learners* – GPT-2 (2019)
 - Karpathy, [*Let's build GPT: from scratch, in code, spelled out*](https://www.youtube.com/watch?v=kCc8FmEb1nY) (2023)
+- Karpathy, [*Let's build GPT: from scratch, in code, spelled out*](https://www.youtube.com/watch?v=kCc8FmEb1nY) (2023)
+
+---
+
+## Notebooks (Git LFS)
+
+- Notebooks in this repository are large binary files and are tracked using Git Large File Storage (Git LFS).
+- To work with this repository locally, install and enable Git LFS:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+- If you add new notebooks, track them with LFS (this repo already tracks `*.ipynb`):
+
+```bash
+git lfs track "*.ipynb"
+git add .gitattributes
+git commit -m "Track notebooks with Git LFS"
+```

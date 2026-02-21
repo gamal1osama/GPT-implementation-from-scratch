@@ -1,0 +1,29 @@
+#  GPT Training Configuration
+
+model:
+  n_embd: 384          # embedding dimension
+  n_head: 6            # number of attention heads
+  n_layer: 6           # number of transformer blocks
+  block_size: 256      # maximum context length (sequence length)
+  dropout: 0.2         # dropout probability
+
+training:
+  batch_size: 64       # sequences processed in parallel
+  max_iters: 5000      # total training steps
+  eval_interval: 500   # how often to evaluate on val set
+  eval_iters: 200      # number of batches used for evaluation
+  learning_rate: 3e-4  # AdamW learning rate
+
+data:
+  raw_data_path: "data/raw/input.txt"
+  processed_dir: "data/processed"
+  train_split: 0.9     # fraction of data used for training
+
+paths:
+  checkpoints_dir: "checkpoints"
+  logs_dir: "logs"
+
+# "auto" resolves to "cuda" if available, else "cpu"
+device: "auto"
+
+seed: 1337
